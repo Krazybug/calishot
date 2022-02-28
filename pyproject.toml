@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "calishot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlite-utils = "^2.8"
+bs4 = "^0.0.1"
+gevent = "^20.5.0"
+datasette-pretty-json = "^0.2"
+datasette-json-html = "^0.6"
+datasette-mask-columns = "^0.2"
+requests = "^2.24.0"
+humanize = "^2.5.0"
+langid = "^1.1.6"
+iso639 = "^0.1.4"
+unidecode = "^1.1.1"
+datasette = "^0.50.2"
+sqlitedict = "^1.7.0"
+fire = "^0.3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

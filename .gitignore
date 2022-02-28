@@ -1,0 +1,5 @@
+*.pyc
+calishot.egg-info/
+.vscode
+.DS_Store
+output/
