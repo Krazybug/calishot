@@ -85,10 +85,11 @@ def build_index (dir='.', english=True):
 
     for db in dbs:
         for i, ebook in enumerate(db["ebooks"].rows):
-            if english and not ebook['language'] or ebook['language'] != "eng":
+            if english and (not ebook['language'] or ebook['language'] != "eng"):
                 continue
             elif not english and ebook['language'] == "eng":
                 continue
+            
             
             if ebook['authors']: 
                 ebook['authors']=formats=json.loads(ebook['authors'])
